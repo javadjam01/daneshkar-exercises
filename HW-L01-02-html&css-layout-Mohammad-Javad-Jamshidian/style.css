@@ -22,7 +22,7 @@ h3 {
     position: alternate;
 }
 
-.galary {
+.gallery {
     columns: 4;
     column-gap: 15px;
     width: calc(100% - 120px);
@@ -48,7 +48,7 @@ h3 {
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.galary-item {
+.gallery-item {
     position: relative;
     overflow: hidden;
     break-inside: avoid;
@@ -85,7 +85,7 @@ h3 {
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
 }
 
-.galary-item:hover .text-box{
+.gallery-item:hover .text-box{
     opacity: 1;
     transform: scale(1.02);
     z-index: 1;
@@ -93,13 +93,13 @@ h3 {
 
 /* Responsive design */
 @media screen and (max-width: 1200px) {
-    .galary {
+    .gallery {
         columns: 3;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .galary {
+    .gallery {
         columns: 2;
         margin-left: 60px;
         width: calc(100% - 80px);
@@ -107,7 +107,7 @@ h3 {
 }
 
 @media screen and (max-width: 480px) {
-    .galary {
+    .gallery {
         columns: 1;
     }
 }
