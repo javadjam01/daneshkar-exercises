@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(assets/noisy-texture-100x100-o8-d13-c-0f0f0f-t0.png) rgba(29, 29, 20, 0.274);
+    background-blend-mode: overlay;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+h3 {
+    color: white;
+    font-family: hepta slab;
+    font-weight: 400;
+    width: 100px;
+    position: alternate;
+}
+
+/* ...existing code... */
+
+.galary {
+    columns: 4;
+    column-gap: 15px;
+    width: calc(100% - 120px);
+}
+
+.content {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+
+.content:hover {
+    transform: scale(1.02);
+}
+
+.content img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+    .galary {
+        columns: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .galary {
+        columns: 2;
+        margin-left: 60px;
+        width: calc(100% - 80px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .galary {
+        columns: 1;
+    }
+}
