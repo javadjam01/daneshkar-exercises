@@ -9,6 +9,6 @@ function validateEmail(email) {
   }
   
   // Example usage
-  validateEmail("example@domain.com"); // Output: ایمیل معتبر است
-  validateEmail("invalid-email");     // Output: ایمیل نامعتبر است
+  validateEmail("example@domain.com");
+  validateEmail("invalid-email");
   
