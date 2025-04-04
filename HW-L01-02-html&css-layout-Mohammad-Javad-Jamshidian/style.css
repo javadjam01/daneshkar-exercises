@@ -35,6 +35,7 @@ h3 {
     cursor: pointer;
     display: inline-block;
     width: 100%;
+    align-items: flex-end;
 }
 
 .content:hover {
